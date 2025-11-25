@@ -1,0 +1,7 @@
+# Служебные файлы ОС
+.DS_Store
+Thumbs.db
+
+# Логи и зависимости
+npm-debug.log*
+node_modules/
