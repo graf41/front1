@@ -5,28 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avion</title>
   <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Avion</h1>
+<header class="header">
+
+  <div class="header__top">
+    <h1 class="header__logo">Avion</h1>
+
 <img src="assets/icons/Search.png" alt="Search icon">
 <form>
   <input type="search" placeholder="Search products">
 </form>
+
 <img src ="assets/icons/Shopping.png" alt="Shopping icon">
 <img src ="assets/icons/User.png" alt="Profile icon">
-
-    <nav>
-    <ul>
-        <li><a href="#">Plant pots</a></li>
-        <li><a href="#">Ceramics</a></li>
-        <li><a href="#">Tables</a></li>
-        <li><a href="#">Chairs</a></li>
-        <li><a href="#">Crockery</a></li>
-        <li><a href="#">Tableware</a></li>
-        <li><a href="#">Cutlery</a></li>
+  </div>
+  
+  <nav class="header__nav">
+    <ul class="header__menu"> 
+      <li class="header__item">
+        <a class="header__link" href="#PlantPots">Plant pots</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Ceramics">Ceramics</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Tables">Tables</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Chairs">Chairs</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Crockery">Crockery</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Tableware">Tableware</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#Cutlery">Cutlery</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -34,9 +54,9 @@
 <main>
 
   <!-- HERO -->
-  <section>
+  <section id="PlantPots">
     <h2>The furniture brand for the future, with timeless designs</h2>
-    <a href="#">View collection</a>
+    <a href="#Chairs">View collection</a>
     <p>
       A new era in home living. Avion is a modern brand with clean fonts,
       subtle colors and a beautiful way to display things digitally.
@@ -46,7 +66,7 @@
   </section>
 
   <!-- FEATURES -->
-  <section>
+  <section id="Tables">
     <h2>What makes our brand different</h2>
 
     <article>
@@ -75,7 +95,7 @@
   </section>
 
   <!-- NEW CERAMICS -->
-  <section>
+  <section id="Ceramics">
     <h2>New ceramics</h2>
 
     <article>
@@ -106,7 +126,7 @@
   </section>
 
   <!-- POPULAR PRODUCTS -->
-  <section>
+  <section id="Chairs">
     <h2>Our popular products</h2>
 
     <article>
@@ -131,7 +151,7 @@
   </section>
 
     <!-- NEWSLETTER SIGNUP -->
-  <section>
+  <section id="Crockery">
     <h2>Join the club and get the benefits</h2>
     <p>
       Sign up for our newsletter and receive exclusive offers on new ranges,
@@ -147,7 +167,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section>
+  <section id ="Tableware">
     <h2>From a studio in London to a global brand</h2>
 
     <p>
@@ -168,7 +188,7 @@
 </main>
 
 <footer>
-  <section>
+  <section id="Cutlery">
     <h2>Menu</h2>
 <nav>
     <ul>
