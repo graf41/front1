@@ -17,13 +17,16 @@ body{
 .header__top{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px 24px;
 
     width: 100%;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #E0E0E0;
-    margin-bottom: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .header__menu{
     display: flex;
@@ -35,12 +38,34 @@ body{
 }
 .header__link{
     text-decoration: none;
-    color: #6A5ACD;
+    color: #655494;
     font-size: 16px;
 }
 .header__logo{
-    text-align: center;
-    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header__left input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header__right img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 .hero{
@@ -95,7 +120,7 @@ body{
 .tables__list{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 50px;
 }
 .tables__item{
     text-align: center;
@@ -107,6 +132,8 @@ body{
 }
 
 .ceramics__price{
+    display: inline-block;
+    border-radius: 6px;
     padding: 2px 8px;
     background-color: #2196f3;
     color: #FFFFFF;
@@ -139,9 +166,66 @@ body{
 .ceramics__collection{
     text-align: center;
 }
+.chairs__title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.chairs__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 24px;
+    gap: 40px;
+}
+.chairs__item{
+    text-align: center;
+}
+.chairs__link{
+    display: inline-block; 
+    margin-top: 24px;
+    margin-bottom: 80px;
+    padding: 25px 40px;
+    background: #D9D9D9;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.chairs__collection{
+    text-align: center;
+}
+.chairs__price {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 2px 8px;
+    background-color: #2196f3;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer__bottom{
+    width: 100%;
+    padding-bottom: 16px;
+    margin-top: 45px;
+    border-top: 1px solid #E0E0E0;
 
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__copyright{
+    margin: 16px 0;
+    color: #888888;
+    font-size: 14px;
+}
+.footer__socials{
+    display: flex;
+    gap: 22px
+}
+.footer__socials img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
 
 
 h1{

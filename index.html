@@ -11,19 +11,22 @@
 <body>
 
 <header class="header">
-
   <div class="header__top">
+
+    <div class="header__left">
+      <img src="assets/icons/Search.png" alt="Search icon">
+      <input type="search" placeholder="Search products">
+    </div>
+
     <h1 class="header__logo">Avion</h1>
 
-<img src="assets/icons/Search.png" alt="Search icon">
-<form>
-  <input type="search" placeholder="Search products">
-</form>
+    <div class="header__right">
+      <img src="assets/icons/Shopping.png" alt="Shopping icon">
+      <img src="assets/icons/User.png" alt="Profile icon">
+    </div>
 
-<img src ="assets/icons/Shopping.png" alt="Shopping icon">
-<img src ="assets/icons/User.png" alt="Profile icon">
   </div>
-  
+
   <nav class="header__nav">
     <ul class="header__menu"> 
       <li class="header__item">
@@ -36,7 +39,7 @@
         <a class="header__link" href="#tables">Tables</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Chairs">Chairs</a>
+        <a class="header__link" href="#chairs">Chairs</a>
       </li>
       <li class="header__item">
         <a class="header__link" href="#Crockery">Crockery</a>
@@ -136,28 +139,32 @@
   </section>
 
   <!-- POPULAR PRODUCTS -->
-  <section id="Chairs">
-    <h2>Our popular products</h2>
+  <section class="chairs" id="chairs">
+    <h2 class="chairs__title">Our popular products</h2>
 
-    <article>
-        <img src="assets/img/Large.png" alt="Popular model of sofa">
-        <h3>The Popular suede sofa</h3>
-        <p>£980</p>
+    <div class="chairs__list">
+    <article class="chairs__item">
+        <img class="chairs__image" src="assets/img/Large.png" alt="Popular model of sofa">
+        <h3 class="chairs__name">The Popular suede sofa</h3>
+        <p class="chairs__price">£980</p>
     </article>
 
-    <article>
-      <img src="assets/img/BlackChair.png" alt="The Dandy chair">
-      <h3>The Dandy chair</h3>
-      <p>£250</p>
+    <article class="chairs__item">
+      <img class="chairs__image" src="assets/img/BlackChair.png" alt="The Dandy chair">
+      <h3 class="chairs__name">The Dandy chair</h3>
+      <p class="chairs__price">£250</p>
     </article>
 
-    <article>
-      <img src="assets/img/GreyChair.png" alt="Chair in studio photo">
-      <h3>The Dandy chair</h3>
-      <p>£250</p>
+    <article class="chairs__item">
+      <img class="chairs__image" src="assets/img/GreyChair.png" alt="Chair in studio photo">
+      <h3 class="chairs__name">The Dandy chair</h3>
+      <p class="chairs__price">£250</p>
     </article>
+    </div>
 
-    <a href="#">View collection</a>
+    <div class="chairs__collection">
+    <a href="#" class="chairs__link">View collection</a>
+    </div>
   </section>
 
     <!-- NEWSLETTER SIGNUP -->
@@ -197,7 +204,7 @@
 
 </main>
 
-<footer>
+<footer class="footer">
   <section id="Cutlery">
     <h2>Menu</h2>
 <nav>
@@ -248,10 +255,14 @@
     </form>
 </section>
 
-<p>Copyright 2022 Avion LTD</p>
+<div class="footer__bottom">
+<p class="footer__copyright">Copyright 2022 Avion LTD</p>
+<div class="footer__socials">
 <img src="assets/icons/linkedin.png" alt="LinkedIn icon">
 <img src="assets/icons/pinterest.png" alt="Pinterest icon">
 <img src="assets/icons/telegram.png" alt="Telegram icon">
+</div>
+</div>
 </footer>
 
 </body>
