@@ -30,10 +30,10 @@
         <a class="header__link" href="#PlantPots">Plant pots</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Ceramics">Ceramics</a>
+        <a class="header__link" href="#ceramics">Ceramics</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Tables">Tables</a>
+        <a class="header__link" href="#tables">Tables</a>
       </li>
       <li class="header__item">
         <a class="header__link" href="#Chairs">Chairs</a>
@@ -54,75 +54,85 @@
 <main>
 
   <!-- HERO -->
-  <section id="PlantPots">
+  <section id="PlantPots" class="hero">
+    <div class="hero__content">
     <h2>The furniture brand for the future, with timeless designs</h2>
-    <a href="#Chairs">View collection</a>
+        <a href="#PlantPots" class="hero__link">View collection</a>
     <p>
       A new era in home living. Avion is a modern brand with clean fonts,
       subtle colors and a beautiful way to display things digitally.
     </p>
+    </div>
 
+    <div class="hero__image">
     <img src="assets/img/BlackChair.png" alt="Future world - Black chair!">
+    </div>
   </section>
 
   <!-- FEATURES -->
-  <section id="Tables">
-    <h2>What makes our brand different</h2>
+  <section class="tables" id="tables">
+    <div class="tables__line"></div>
+    <h2 class="tables__title">What makes our brand different</h2>
 
-    <article>
+    <div class="tables__list">
+    <div class="tables__item">
       <img src="assets/icons/Delivery.png" alt="Delivery icon">
       <h3>Next day as standard</h3>
       <p>Order before 3pm and get your order the next day as standard.</p>
-    </article>
+  </div>
 
-    <article>
+    <div class="tables__item">
       <img src="assets/icons/Checkmark--outline.png" alt="Artisan icon">
       <h3>Made by true artisans</h3>
       <p>Handmade crafted goods made with real passion and craftsmanship.</p>
-    </article>
+    </div>
 
-    <article>
+    <div class="tables__item">
       <img src="assets/icons/Purchase.png" alt="Best price icon">
       <h3>Unbeatable prices</h3>
       <p>For our materials and quality you won’t find better prices anywhere.</p>
-    </article>
+    </div>
 
-    <article>
+    <div class="tables__item">
       <img src="assets/icons/Sprout.png" alt="Recycled packaging icon">
       <h3>Recycled packaging</h3>
       <p>We use 100% recycled packaging to ensure our footprint is manageable.</p>
-    </article>
+    </div>
   </section>
 
   <!-- NEW CERAMICS -->
-  <section id="Ceramics">
-    <h2>New ceramics</h2>
+  <section class="ceramics" id="ceramics">
+    <h2 class="ceramics__title">New ceramics</h2>
 
-    <article>
-      <img src="assets/img/BlackChair.png" alt="The Dandy chair">
-      <h3>The Dandy chair</h3>
-      <p>£250</p>
+    <div class="ceramics__list">
+    <article class="ceramics__item">
+      <img class="ceramics__image" src="assets/img/BlackChair.png" alt="The Dandy chair">
+      <h3 class="ceramics__name">The Dandy chair</h3>
+      <p><span class="ceramics__price">£250</span></p>
     </article>
 
-    <article>
+    <article class="ceramics__item">
       <img src="assets/img/Vase.png" alt="Rustic Vase Set">
-      <h3>Rustic Vase Set</h3>
-      <p>£155</p>
+      <h3 class="ceramics__name">Rustic Vase Set</h3>
+      <p><span class="ceramics__price">£155</span></p>
     </article>
 
-    <article>
-      <img src="assets/img/Vase.png" alt="The Silky Vase">
-      <h3>The Silky Vase</h3>
-      <p>£125</p>
+    <article class="ceramics__item">
+      <img class="ceramics__image" src="assets/img/Vase.png" alt="The Silky Vase">
+      <h3 class="ceramics__name">The Silky Vase</h3>
+      <p><span class="ceramics__price">£125</span></p>
     </article>
 
-    <article>
-      <img src="assets/img/Lamp.png" alt="The Lucy Lamp">
-      <h3>The Lucy Lamp</h3>
-      <p>£399</p>
+    <article class="ceramics__item">
+      <img class="ceramics__image" src="assets/img/Lamp.png" alt="The Lucy Lamp">
+      <h3 class="ceramics__name">The Lucy Lamp</h3>
+      <p><span class="ceramics__price">£399</span></p>
     </article>
+  </div>
 
-    <a href="#">View collection</a>
+  <div class="ceramics__collection">
+    <a href="#" class="ceramics__link">View collection</a>
+  </div>
   </section>
 
   <!-- POPULAR PRODUCTS -->

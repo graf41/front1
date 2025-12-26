@@ -30,8 +30,8 @@ body{
     gap: 40px;
     list-style: none;
     
-    padding-bottom: 16px;
-    margin-bottom: 35px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
 }
 .header__link{
     text-decoration: none;
@@ -42,6 +42,107 @@ body{
     text-align: center;
     width: 100px;
 }
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #392F54;
+    color: #FFFFFF;
+
+    padding: 0px 0px;
+    gap: 0px;
+    margin: 50px;
+    min-height: 520px;
+}
+.hero__link{
+    display: inline-block;
+    margin-top: 24px;
+    padding: 25px 40px;
+    background: #655494;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 15px 0 80px;
+}
+.hero__image{
+    width: 100%;
+    height: 100%;
+}
+.hero__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 70px;  
+    padding-right: 50px;
+    padding-bottom: 120px;
+    padding-left: 50px;
+}
+
+.tables{
+    text-align: center;
+    padding: 0 100px;
+    margin-bottom: 80px;
+
+}
+.tables__list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.tables__item{
+    text-align: center;
+}
+.tables__title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.ceramics__price{
+    padding: 2px 8px;
+    background-color: #2196f3;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+.ceramics__list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.ceramics__item{
+    text-align: center;
+}
+.ceramics__title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.ceramics__link{
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    padding: 25px 40px;
+    background: #D9D9D9;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.ceramics__collection{
+    text-align: center;
+}
+
+
+
+
 
 h1{
     font-size: 40px;
