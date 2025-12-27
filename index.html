@@ -42,13 +42,13 @@
         <a class="header__link" href="#chairs">Chairs</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Crockery">Crockery</a>
+        <a class="header__link" href="#crockery">Crockery</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Tableware">Tableware</a>
+        <a class="header__link" href="#tableware">Tableware</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#Cutlery">Cutlery</a>
+        <a class="header__link" href="#cutlery">Cutlery</a>
       </li>
     </ul>
   </nav>
@@ -168,47 +168,52 @@
   </section>
 
     <!-- NEWSLETTER SIGNUP -->
-  <section id="Crockery">
-    <h2>Join the club and get the benefits</h2>
-    <p>
+  <section class="crockery" id="crockery">
+    <h2 class="crockery__title">Join the club and get the benefits</h2>
+    <p class="crockery__text">
       Sign up for our newsletter and receive exclusive offers on new ranges,
       sales, pop up stores and more
     </p>
 
-    <form>
+    <form class="crockery__form">
       <label>
-        <input type="email" placeholder="you@email.com">
+        <input class="crockery__input" type="email" placeholder="you@email.com">
       </label>
-      <button type="submit">Sign up</button>
+      <button class="crockery__button" type="submit">Sign up</button>
     </form>
   </section>
 
   <!-- ABOUT -->
-  <section id ="Tableware">
-    <h2>From a studio in London to a global brand</h2>
+  <section class="tableware"id ="tableware">
+    <div class="tableware__content">
+    <h2 class="tableware__title">From a studio in London to a global brand with over 400 outlets</h2>
 
-    <p>
+    <p class="tableware__text">
       When we started Avion, the idea was simple. Make high quality furniture
       affordable and available for the mass market.
     </p>
-
-    <p>
-      Handmade, and lovingly crafted furniture and homeware is what we do.
-      We make sure our pieces are easy to love and work beautifully in your home.
+    <p class="tableware__text">
+      Handmade, and lovingly craft ed furniture and homeware is what we live,
+      breathe and design so our Chelsea boutique become the hotbed for the 
+      London interior design community.
     </p>
+    <a href="#" class="tableware__link">Get in touch</a>
+  </div>
 
-    <a href="#">Get in touch</a>
-
+  <div class="tableware__image">
     <img src="assets/img/Room.png" alt="Living room scene">
+    </div>
   </section>
 
 </main>
 
+
 <footer class="footer">
-  <section id="Cutlery">
-    <h2>Menu</h2>
+  <div class="footer__top">
+  <section class="footer__column" id="Cutlery">
+    <h2 class="footer__title">Menu</h2>
 <nav>
-    <ul>
+    <ul class="footer__list">
         <li><a href="#">New arrivals</a></li>
         <li><a href="#">Best sellers</a></li>
         <li><a href="#">Recently viewed</a></li>
@@ -218,25 +223,25 @@
     </nav>
     </section>
 
-    <section>
-        <h2>Categories</h2>
+    <section class="footer__column">
+        <h2 class="footer__title">Categories</h2>
     <nav>
-    <ul>
+    <ul class="footer__list">
         <li><a href="#">Crockery</a></li>
         <li><a href="#">Furniture</a></li>
         <li><a href="#">Homeware</a></li>
         <li><a href="#">Plant pots</a></li>
         <li><a href="#">Chairs</a></li>
+        <li><a href="#">Crockery</a></li>
     </ul>
     </nav>
     </section>
 
-    <section>
-        <h2>Our company</h2>
+    <section class="footer__column">
+        <h2 class="footer__title">Our company</h2>
         <nav>
-    <ul>
+    <ul class="footer__list">
         <li><a href="#">About us</a></li>
-        <li><a href="#">Vakancies</a></li>
         <li><a href="#">Vakancies</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Privacy</a></li>
@@ -245,23 +250,22 @@
     </nav>
     </section>
 
-<section>
-    <h2>Join our mailling list</h2>
-    <form>
-        <label>
-            <input type="email" placeholder="your@email"> 
-        </label>
-        <button type="submit">Sign Up</button>
+<section class="footer__column__form">
+    <h2 class="footer__title">Join our mailing list</h2>
+    <form class="footer__form">
+            <input class="footer__input" type="email" placeholder="your@email"> 
+        <button class="footer__button" type="submit">Sign Up</button>
     </form>
 </section>
+</div>
 
 <div class="footer__bottom">
-<p class="footer__copyright">Copyright 2022 Avion LTD</p>
-<div class="footer__socials">
-<img src="assets/icons/linkedin.png" alt="LinkedIn icon">
-<img src="assets/icons/pinterest.png" alt="Pinterest icon">
-<img src="assets/icons/telegram.png" alt="Telegram icon">
-</div>
+  <p class="footer__copyright">Copyright 2022 Avion LTD</p>
+  <div class="footer__socials">
+  <img src="assets/icons/linkedin.png" alt="LinkedIn icon">
+  <img src="assets/icons/pinterest.png" alt="Pinterest icon">
+  <img src="assets/icons/telegram.png" alt="Telegram icon">
+  </div>
 </div>
 </footer>
 
