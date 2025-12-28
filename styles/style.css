@@ -67,6 +67,36 @@ body{
     height: 20px;
     cursor: pointer;
 }
+@media (max-width: 575px) {
+    .header__top{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .header__logo{
+        position: static;
+        transform: none;
+        order: -1;
+    }
+    .header__menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 0;
+    }
+    .header__left, .header__right {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media (max-width: 991px) {
+
+    .header__menu {
+    gap: 24px;
+    }
+
+}
+
 
 .hero{
     display: grid;
@@ -109,6 +139,38 @@ body{
     padding-right: 50px;
     padding-bottom: 120px;
     padding-left: 50px;
+}
+@media (max-width: 575px) {
+    .hero {
+    grid-template-columns: 1fr;
+    margin: 16px;
+}
+
+    .hero__image {
+    order: -1;
+}
+
+    .hero__content {
+    padding: 24px 20px 40px;
+    align-items: center;
+    text-align: center;
+    }
+
+    .hero__link {
+    margin-bottom: 40px;
+}
+}
+@media (max-width: 991px) {
+
+    .hero {
+    margin: 24px;
+    min-height: auto;
+    }
+
+    .hero__content {
+    padding: 40px;
+    }
+
 }
 
 .tables{
@@ -166,6 +228,50 @@ body{
 .ceramics__collection{
     text-align: center;
 }
+@media (max-width: 575px) {
+
+    .tables {
+    padding: 0 16px;
+    }
+
+    .tables__list,
+    .ceramics__list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    }
+
+    .tables__title,
+    .ceramics__title {
+    margin-top: 60px;
+    margin-bottom: 32px;
+    }
+
+    .ceramics__link {
+    padding: 18px 28px;
+    margin-bottom: 40px;
+    }
+
+}
+@media (max-width: 991px) {
+
+    .tables {
+    padding: 0 40px;
+    }
+
+    .tables__list,
+    .ceramics__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    }
+
+    .tables__title,
+    .ceramics__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    }
+
+}
+
 .chairs__title{
     text-align: center;
     margin-top: 100px;
@@ -202,6 +308,38 @@ body{
     font-weight: bold;
     font-size: 15px;
 }
+@media (max-width: 991px) {
+
+    .chairs__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    }
+
+    .chairs__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    }
+}
+@media (max-width: 575px) {
+
+    .chairs__list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+    }
+
+    .chairs__title {
+    margin-top: 60px;
+    margin-bottom: 32px;
+    }
+
+    .chairs__link {
+    padding: 18px 28px;
+    margin-bottom: 40px;
+    }
+}
+
+
 .crockery{
     text-align: center;
     background-color: #392F54;
@@ -242,6 +380,40 @@ body{
     cursor: pointer;
     font-size: 16px;
 }
+@media (max-width: 991px) {
+
+    .crockery {
+    margin: 20px 24px 60px;
+    padding: 40px 24px;
+    }
+
+}
+@media (max-width: 575px) {
+
+    .crockery {
+    margin: 16px;
+    padding: 32px 20px;
+    }
+
+    .crockery__form {
+    flex-direction: column;
+    gap: 16px;
+    }
+
+    .crockery__input,
+    .crockery__button {
+    width: 100%;
+    padding: 18px;
+    }
+
+    .crockery__title {
+    font-size: 22px;
+    padding: 0;
+    }
+
+}
+
+
 .tableware{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -290,6 +462,31 @@ body{
     padding-bottom: 120px;
     padding-left: 50px;
 }
+@media (max-width: 991px) {
+
+    .tableware__content {
+    padding: 40px;
+    }
+
+}
+@media (max-width: 575px) {
+
+    .tableware {
+    grid-template-columns: 1fr;
+    }
+
+    .tableware__image {
+    order: -1;
+    }
+
+    .tableware__content {
+    padding: 24px 20px 40px;
+    align-items: center;
+    text-align: center;
+    }
+
+}
+
 
 .footer{
     background-color: #392F54;
@@ -378,6 +575,52 @@ body{
 .footer__copyright {
     white-space: nowrap;
 }
+@media (max-width: 991px) {
+
+    .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 32px 0;
+    gap: 32px;
+    }
+}
+@media (max-width: 575px) {
+
+    .footer__top {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 0;
+    gap: 24px;
+    }
+
+    .footer__title {
+    text-align: center;
+    }
+
+    .footer__column {
+    align-items: center;
+    text-align: center;
+    }
+
+    .footer__form {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    }
+
+    .footer__input,
+    .footer__button {
+    width: 100%;
+    padding: 14px;
+    }
+
+    .footer__bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    }
+
+}
+
+
 
 h1{
     font-size: 40px;
