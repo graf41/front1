@@ -67,6 +67,15 @@ body{
     height: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 991px) {
+
+    .header__menu {
+    gap: 24px;
+    }
+
+}
+
 @media (max-width: 575px) {
     .header__top{
         flex-direction: column;
@@ -88,13 +97,6 @@ body{
         width: 100%;
         justify-content: center;
     }
-}
-@media (max-width: 991px) {
-
-    .header__menu {
-    gap: 24px;
-    }
-
 }
 
 
@@ -140,6 +142,19 @@ body{
     padding-bottom: 120px;
     padding-left: 50px;
 }
+@media (max-width: 991px) {
+
+    .hero {
+    margin: 24px;
+    min-height: auto;
+    }
+
+    .hero__content {
+    padding: 40px;
+    }
+
+}
+
 @media (max-width: 575px) {
     .hero {
     grid-template-columns: 1fr;
@@ -160,18 +175,7 @@ body{
     margin-bottom: 40px;
 }
 }
-@media (max-width: 991px) {
 
-    .hero {
-    margin: 24px;
-    min-height: auto;
-    }
-
-    .hero__content {
-    padding: 40px;
-    }
-
-}
 
 .tables{
     text-align: center;
@@ -228,6 +232,26 @@ body{
 .ceramics__collection{
     text-align: center;
 }
+@media (max-width: 991px) {
+
+    .tables {
+    padding: 0 40px;
+    }
+
+    .tables__list,
+    .ceramics__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    }
+
+    .tables__title,
+    .ceramics__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    }
+
+}
+
 @media (max-width: 575px) {
 
     .tables {
@@ -248,25 +272,6 @@ body{
 
     .ceramics__link {
     padding: 18px 28px;
-    margin-bottom: 40px;
-    }
-
-}
-@media (max-width: 991px) {
-
-    .tables {
-    padding: 0 40px;
-    }
-
-    .tables__list,
-    .ceramics__list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    }
-
-    .tables__title,
-    .ceramics__title {
-    margin-top: 80px;
     margin-bottom: 40px;
     }
 
@@ -336,6 +341,21 @@ body{
     .chairs__link {
     padding: 18px 28px;
     margin-bottom: 40px;
+    }
+
+    .ceramics__item {
+    max-width: 320px;
+    margin: 0 auto;
+    }
+    .chairs__item {
+    max-width: 320px;
+    margin: 0 auto;
+    }
+
+    .chairs__image {
+    width: 100%;
+    height: auto;
+    display: block;
     }
 }
 
